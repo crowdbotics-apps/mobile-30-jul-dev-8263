@@ -23,12 +23,12 @@ export class _Blank extends React.Component {
   }
 
   state = {
-    Input_4: "",
-    Input_5: "",
+    Input_4: "test test",
+    Input_5: "87687686876",
     Datepicker_6: new Date("07/30/2020"),
     Toggle_7: true,
-    Radio_9: true,
-    CheckBox_10: true
+    CheckBox_10: true,
+    Radio_9: true
   }
 
   render = () => (
@@ -283,37 +283,6 @@ export class _Blank extends React.Component {
         checked={this.state.Toggle_7}
         onChange={nextChecked => this.setState({ Toggle_7: nextChecked })}
       />
-      <Radio
-        text="Radio button"
-        disabled={false}
-        style={{
-          marginLeft: 0,
-          marginRight: 0,
-          marginTop: 5,
-          marginBottom: 5,
-          paddingLeft: 5,
-          paddingRight: 5,
-          paddingTop: 5,
-          paddingBottom: 5,
-          overflow: "visible",
-          textAlign: "left",
-          verticalAlign: "baseline",
-          borderColor: "#000000",
-          borderStyle: "solid",
-          borderWidth: 0,
-          borderLeftWidth: 0,
-          borderRightWidth: 0,
-          borderTopWidth: 0,
-          borderBottomWidth: 0,
-          borderRadius: 0,
-          textDecorationLine: "none",
-          textTransform: "none",
-          lineHeight: 12,
-          letterSpacing: 10
-        }}
-        checked={this.state.Radio_9}
-        onChange={nextChecked => this.setState({ Radio_9: nextChecked })}
-      />
       <CheckBox
         text="Checkbox"
         disabled={false}
@@ -344,6 +313,37 @@ export class _Blank extends React.Component {
         }}
         checked={this.state.CheckBox_10}
         onChange={nextChecked => this.setState({ CheckBox_10: nextChecked })}
+      />
+      <Radio
+        text="Radio button"
+        disabled={false}
+        style={{
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          textAlign: "left",
+          verticalAlign: "baseline",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0,
+          textDecorationLine: "none",
+          textTransform: "none",
+          lineHeight: 12,
+          letterSpacing: 10
+        }}
+        checked={this.state.Radio_9}
+        onChange={nextChecked => this.setState({ Radio_9: nextChecked })}
       />
     </View>
   )
