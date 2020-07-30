@@ -277,14 +277,28 @@ export const rest_auth_user_partial_updateFailed = error => ({
   type: types.REST_AUTH_USER_PARTIAL_UPDATE_FAILED,
   error
 })
+
 export const newplugin301_get__read = () => ({
   type: types.NEWPLUGIN301_GET__READ
 })
+
 export const newplugin301_get__readSucceeded = response => ({
   type: types.NEWPLUGIN301_GET__READ_SUCCEEDED,
   response
 })
+
 export const newplugin301_get__readFailed = error => ({
   type: types.NEWPLUGIN301_GET__READ_FAILED,
+  error
+})
+export const newplugin303_get__read = () => ({
+  type: types.NEWPLUGIN303_GET__READ
+})
+export const newplugin303_get__readSucceeded = response => ({
+  type: types.NEWPLUGIN303_GET__READ_SUCCEEDED,
+  response
+})
+export const newplugin303_get__readFailed = error => ({
+  type: types.NEWPLUGIN303_GET__READ_FAILED,
   error
 })
