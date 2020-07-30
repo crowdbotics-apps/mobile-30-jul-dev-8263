@@ -1,4 +1,10 @@
 import axios from "axios"
+import {} from "react-native-dotenv"
+const newPlugin304 = axios.create({
+  baseURL:
+    "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/8263/storyboard/9528/",
+  headers: { Accept: "application/json", "Content-Type": "application/json" }
+})
 const newPlugin303 = axios.create({
   baseURL:
     "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/8263/storyboard/9528/",
@@ -23,6 +29,9 @@ const mobile30julAPI = axios.create({
   baseURL: "https://mobile-30-jul-dev-8263.botics.co/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
+function newplugin304_get__read() {
+  return newPlugin304.get(`/`)
+}
 function newplugin303_get__read() {
   return newPlugin303.get(`/`)
 }
@@ -96,6 +105,7 @@ function rest_auth_user_partial_update(requestBody) {
   return mobile30julAPI.patch(`/rest-auth/user/`, requestBody)
 }
 export const apiService = {
+  newplugin304_get__read,
   newplugin303_get__read,
   newplugin301_get__read,
   api_v1_customtext_list,
